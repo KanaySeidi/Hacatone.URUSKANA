@@ -8,145 +8,194 @@
     <link rel="stylesheet" href="./css/styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <title>Hackatone</title>
+    <title>Twitter by URUS & Kanay</title>
 </head>
 
 <body>
-    <!-- =============== NAVBAR START =================== -->
-    <nav class="container-fluid">
-        <div class="container row mx-auto">
-            <div class="col-3">
-                <a href="">
-                    <img src="./img/icons8-twitter.svg" alt="">
-                </a>
-            </div>
-            <div class="col-5 d-flex justify-content-between">
-                <div class="home-btn">
-                    <a href="" class="nav-link text-dark fw-bold fs-5">Home</a>
-                </div>
-                <div class="star-btn">
-                    <a href="" class="nav-link">
-                        <img width="25" src="./img/599887.png" alt="">
-                    </a>
-                </div>
-            </div>
-            <div class="col-4 d-flex align-items-center position-relative">
-                <div class="search-btn">
-                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" viewBox="0 0 172 172"
-                        style=" fill:#000000;">
-                        <g transform="">
-                            <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
-                                stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
-                                font-family="none" font-weight="none" font-size="none" text-anchor="none"
-                                style="mix-blend-mode: normal">
-                                <path d="M0,172v-172h172v172z" fill="none"></path>
-                                <g fill="#3498db">
-                                    <path
-                                        d="M72.24,10.32c-32.26344,0 -58.48,26.21656 -58.48,58.48c0,32.26344 26.21656,58.48 58.48,58.48c12.76563,0 24.56375,-4.11187 34.185,-11.0725l45.2575,45.15l9.675,-9.675l-44.72,-44.8275c8.78813,-10.23937 14.0825,-23.52906 14.0825,-38.055c0,-32.26344 -26.21656,-58.48 -58.48,-58.48zM72.24,17.2c28.54125,0 51.6,23.05875 51.6,51.6c0,28.54125 -23.05875,51.6 -51.6,51.6c-28.54125,0 -51.6,-23.05875 -51.6,-51.6c0,-28.54125 23.05875,-51.6 51.6,-51.6z">
-                                    </path>
-                                </g>
-                                <path d="" fill="none"></path>
-                                <path d="" fill="none"></path>
-                            </g>
-                        </g>
-                    </svg>
-                </div>
-                <input type="search" class="form-control rounded-pill search-input" id="" placeholder="Search Twitter">
-            </div>
-        </div>
-    </nav>
-    <!-- ============ NAVBAR END =============== -->
-
-    <!-- ============== SIDEBAR START ================= -->
-    <div class="general-container d-flex position-relative justify-content-between p-5 m-5">
-        <div class="sidebar-container d-flex position-relative bg-warning">
-            <ul class="nav flex-column d-inline p-2 postion-absolute">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Explore</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Massage</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Bookmarks</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">List</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Profile</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">More</a>
-                </li>
-
-            </ul>
-        </div>
-        <!-- =============== SIDEBAR END ================ -->
-        <div class="main-container bg-info postion-absolute">MAIN INFO
-
-        </div>
-
-        <div class="right-container bg-danger">
-            RIGHT INFO
-        </div>
-    </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <!-- ============ MODAL BTN ===================== -->
-    <button type="button" class="btn btn-primary display-absolute row col-2 rounded-pill p-2 m-3" data-bs-toggle="modal"
-        data-bs-target="#exampleModal" id="tweet">Tweet
-    </button>
-
-    <!-- ======================= MODAL START ================================= -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
+    <div class="twitter-page">
+        <!-- ==== NAVbar START ==== -->
+        <nav class="container-fluid">
+            <div class=" row mx-auto">
+                <div class="col-3">
                     <a href="">
-                        <img width="15" src="./img/cancel.png" alt="">
-                    </a>
-                    <a href="" class="fs-6 text-decoration-none">
-                        <span class="text-primary">Unsent tweets</span>
+                        <img src="./img/icons8-twitter.svg" alt="">
                     </a>
                 </div>
+                <div class="col-5 d-flex justify-content-between">
+                    <div class="home-btn">
+                        <a href="" class="nav-link text-dark fw-bold fs-5">Home</a>
+                    </div>
+                    <div class="star-btn">
+                        <a href="" class="nav-link">
+                            <img width="25" src="./img/599887.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-4 d-flex align-items-center position-relative">
+                    <div class="search-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20"
+                            viewBox="0 0 172 172" style=" fill:#000000;">
+                            <g transform="">
+                                <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                                    stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray=""
+                                    stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none"
+                                    text-anchor="none" style="mix-blend-mode: normal">
+                                    <path d="M0,172v-172h172v172z" fill="none"></path>
+                                    <g fill="#3498db">
+                                        <path
+                                            d="M72.24,10.32c-32.26344,0 -58.48,26.21656 -58.48,58.48c0,32.26344 26.21656,58.48 58.48,58.48c12.76563,0 24.56375,-4.11187 34.185,-11.0725l45.2575,45.15l9.675,-9.675l-44.72,-44.8275c8.78813,-10.23937 14.0825,-23.52906 14.0825,-38.055c0,-32.26344 -26.21656,-58.48 -58.48,-58.48zM72.24,17.2c28.54125,0 51.6,23.05875 51.6,51.6c0,28.54125 -23.05875,51.6 -51.6,51.6c-28.54125,0 -51.6,-23.05875 -51.6,-51.6c0,-28.54125 23.05875,-51.6 51.6,-51.6z">
+                                        </path>
+                                    </g>
+                                    <path d="" fill="none"></path>
+                                    <path d="" fill="none"></path>
+                                </g>
+                            </g>
+                        </svg>
+                    </div>
+                    <input type="search" class="form-control rounded-pill search-input" id=""
+                        placeholder="Search Twitter">
+                </div>
+            </div>
+        </nav>
+        <!-- Navbar end -->
+        <!-- Modal start -->
+        <div class="tweet-modal">
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <a href="">
+                                <img width="15" src="./img/cancel.png" alt="">
+                            </a>
+                            <span class="text-primary">Unsent tweets</span>
+                        </div>
+                        <div class="modal-body">
+                            <input type="text" class="" id="tweet-inp" placeholder="What's happening?">
+                        </div>
+                        <div class="modal-footer">
+                            <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+                            <button type="button" id="tweet-btn" class="btn btn-primary">Tweet</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal end -->
+
+        <div class="twitter-page-body mx-auto row">
+
+            <div class="sidebar col-3">
+                <div class="sidebar-links">
+                    <div class="sidebar-link">
+                        <a href="#">Home</a>
+                    </div>
+                    <div class="sidebar-link">
+                        <a href="#">Explore</a>
+                    </div>
+                    <div class="sidebar-link">
+                        <a href="#">Notifications</a>
+                    </div>
+                    <div class="sidebar-link">
+                        <a href="#">Messages</a>
+                    </div>
+                    <div class="sidebar-link">
+                        <a href="#">Bookmarks</a>
+                    </div>
+                    <div class="sidebar-link">
+                        <a href="#">Lists</a>
+                    </div>
+                    <div class="sidebar-link">
+                        <a href="#">Profile</a>
+                    </div>
+                    <div class="sidebar-link">
+                        <a href="#">More</a>
+                    </div>
+
+                </div>
+                <button type="button" class="left__tweet__btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Tweet
+                </button>
+            </div>
+            <div class="centerbar col-5">
+
+                <div class="single__tweet row">
+                    <img class="tweet__img col-2 rounded-circle"
+                        src="https://is1-ssl.mzstatic.com/image/thumb/Purple125/v4/ff/7c/b4/ff7cb4b6-600f-077d-fe9f-834429fe47b7/source/256x256bb.jpg"
+                        alt="">
+                    <!-- <div class="tweet__img"></div> -->
+                    <div class="tweet__body col-10">
+                        <div class="tweet__header">
+                            <span class="fw-bold">UEFA Champions league </span>
+                            <span> @championsleague</span>
+                        </div>
+                        <div class="tweet__text">
+                            Real Madrid were crowned world champions #OTD in 2018! Crown
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias minus ipsa nihil nemo iusto
+                            officiis sapiente molestias nam architecto adipisci, recusandae accusamus beatae voluptatem
+                            dignissimos cumque hic tempore. Expedita, temporibus.
+                        </div>
+                        <div class="tweet__footer">
+                            <div class="comment">
+                                <svg width="24" height="24" aria-hidden="true">
+                                    <g>
+                                        <path
+                                            d="M14.046 2.242l-4.148-.01h-.002c-4.374 0-7.8 3.427-7.8 7.802 0 4.098 3.186 7.206 7.465 7.37v3.828c0 .108.044.286.12.403.142.225.384.347.632.347.138 0 .277-.038.402-.118.264-.168 6.473-4.14 8.088-5.506 1.902-1.61 3.04-3.97 3.043-6.312v-.017c-.006-4.367-3.43-7.787-7.8-7.788zm3.787 12.972c-1.134.96-4.862 3.405-6.772 4.643V16.67c0-.414-.335-.75-.75-.75h-.396c-3.66 0-6.318-2.476-6.318-5.886 0-3.534 2.768-6.302 6.3-6.302l4.147.01h.002c3.532 0 6.3 2.766 6.302 6.296-.003 1.91-.942 3.844-2.514 5.176z">
+                                        </path>
+                                    </g>
+                                </svg>
+                                <span>23</span>
+                            </div>
+                            <div class="comment">
+                                <svg width="24" height="24" aria-hidden="true">
+                                    <g>
+                                        <path
+                                            d="M23.77 15.67c-.292-.293-.767-.293-1.06 0l-2.22 2.22V7.65c0-2.068-1.683-3.75-3.75-3.75h-5.85c-.414 0-.75.336-.75.75s.336.75.75.75h5.85c1.24 0 2.25 1.01 2.25 2.25v10.24l-2.22-2.22c-.293-.293-.768-.293-1.06 0s-.294.768 0 1.06l3.5 3.5c.145.147.337.22.53.22s.383-.072.53-.22l3.5-3.5c.294-.292.294-.767 0-1.06zm-10.66 3.28H7.26c-1.24 0-2.25-1.01-2.25-2.25V6.46l2.22 2.22c.148.147.34.22.532.22s.384-.073.53-.22c.293-.293.293-.768 0-1.06l-3.5-3.5c-.293-.294-.768-.294-1.06 0l-3.5 3.5c-.294.292-.294.767 0 1.06s.767.293 1.06 0l2.22-2.22V16.7c0 2.068 1.683 3.75 3.75 3.75h5.85c.414 0 .75-.336.75-.75s-.337-.75-.75-.75z">
+                                        </path>
+                                    </g>
+                                </svg>
+                                <span>23</span>
+                            </div>
+                            <div class="comment">
+                                <svg width="24" height="24" aria-hidden="true">
+                                    <g>
+                                        <path
+                                            d="M12 21.638h-.014C9.403 21.59 1.95 14.856 1.95 8.478c0-3.064 2.525-5.754 5.403-5.754 2.29 0 3.83 1.58 4.646 2.73.814-1.148 2.354-2.73 4.645-2.73 2.88 0 5.404 2.69 5.404 5.755 0 6.376-7.454 13.11-10.037 13.157H12zM7.354 4.225c-2.08 0-3.903 1.988-3.903 4.255 0 5.74 7.034 11.596 8.55 11.658 1.518-.062 8.55-5.917 8.55-11.658 0-2.267-1.823-4.255-3.903-4.255-2.528 0-3.94 2.936-3.952 2.965-.23.562-1.156.562-1.387 0-.014-.03-1.425-2.965-3.954-2.965z">
+                                        </path>
+                                    </g>
+                                </svg>
+                                <span>23</span>
+                            </div>
+                            <div class="comment">
+                                <svg width="24" height="24" aria-hidden="true">
+                                    <g>
+                                        <path
+                                            d="M17.53 7.47l-5-5c-.293-.293-.768-.293-1.06 0l-5 5c-.294.293-.294.768 0 1.06s.767.294 1.06 0l3.72-3.72V15c0 .414.336.75.75.75s.75-.336.75-.75V4.81l3.72 3.72c.146.147.338.22.53.22s.384-.072.53-.22c.293-.293.293-.767 0-1.06z">
+                                        </path>
+                                        <path
+                                            d="M19.708 21.944H4.292C3.028 21.944 2 20.916 2 19.652V14c0-.414.336-.75.75-.75s.75.336.75.75v5.652c0 .437.355.792.792.792h15.416c.437 0 .792-.355.792-.792V14c0-.414.336-.75.75-.75s.75.336.75.75v5.652c0 1.264-1.028 2.292-2.292 2.292z">
+                                        </path>
+                                    </g>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+            <div class="rightbar row col-4">
+                <div class="right-top">
+                    <h5 class="right-head-text">Trends for you</h5>
+                    <div class="right__inner__text">
+                        <span class="right__text__one">Trending Some text</span><br>
+                        <span class="right__text__two">Kyrgyzstan</span>
+                    </div>
+                    <span class="right__show__more">Show more</span>
+                </div>
+<<<<<<< HEAD
                 <div class="modal-body">
                     <img width="45" src="./img/userlogo.png" alt="">
 <<<<<<< HEAD
@@ -171,28 +220,74 @@
                         <button class="btn-primary rounded-pill" id="add-tweet">Tweet</button>
 >>>>>>> e28a0a31421ab0a9ba09e808b08135102da9000e
                     </a>
+=======
+                <div class="right__mid">
+                    <h5 class="right-head-text">Who to follow</h5>
+                    <div class="follow__block row ">
+                        <img class="follow__img col-3"
+                            src="https://i.pinimg.com/474x/05/6d/ff/056dffd6660d2d8212b277ca9e10cc79.jpg" alt="">
+                        <div class="follow__text col-6">
+                            <span>Premier League</span><br>
+                            <span>@premierleague</span>
+                        </div>
+                        <div class="follow-btn col-3">
+                            <button class="follow__btn">Follow</button>
+                        </div>
+                    </div>
+                    <div class="follow__block row">
+                        <img class="follow__img col-3"
+                            src="https://sites.google.com/site/ftskits/_/rsrc/1474327947596/home/liga/league_spain.png"
+                            alt="">
+                        <div class="follow__text col-6">
+                            <span>La Liga</span><br>
+                            <span>@laliga</span>
+                        </div>
+                        <div class="follow-btn col-3">
+                            <button class="follow__btn">Follow</button>
+                        </div>
+                    </div>
+                    <div class="follow__block row">
+                        <img class="follow__img col-3"
+                            src="https://teamwork-online-production.s3.amazonaws.com/uploads/thumb_cebba3be-6bc7-47cb-a808-10999aaf29af.png"
+                            alt="">
+                        <div class="follow__text col-6">
+                            <span>UFC</span><br>
+                            <span>@ufc</span>
+                        </div>
+                        <div class="follow-btn col-3">
+                            <button class="follow__btn">Follow</button>
+                        </div>
+                    </div>
                 </div>
+                <div class="right__bottom">
+                    <a href="#">Terms of service</a>
+                    <a href="#">Privacy policy</a>
+                    <a href="#">Cookie policy</a>
+                    <a href="#">Accessibility</a>
+                    <a href="#">Ads info</a>
+                    <a href="#">More...</a>
+                    <p href="#">2021 Twitter, Inc</p>
+>>>>>>> 350201a551ab681fe2f15b0288feab03ee1d3a5f
+                </div>
+
+
             </div>
         </div>
+
+
     </div>
-    </div>
-
-    </div>
 
 
 
 
 
 
-
-
-
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.js"
-        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script src="./js/main.js"></script>
 </body>
 
