@@ -3,8 +3,10 @@ $(document).ready(() => {
 
   const tweetBtn = $("#tweet-btn");
   const tweetInp = $("#tweet-inp");
+  const likeBtn = $("#like-btn");
 
-  async function addTweet() {
+  async function addTweet(event) {
+    event.preventDefault();
     try {
       await axios.post(API, {
         tittle: tweetInp.val().trim(),
