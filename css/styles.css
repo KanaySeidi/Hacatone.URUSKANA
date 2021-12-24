@@ -95,6 +95,9 @@
     padding: 1em;
     border-radius: 30px;
   }
+  #unsentTweet {
+    cursor: pointer;
+  }
   .follow__block {
     align-items: center;
   }
