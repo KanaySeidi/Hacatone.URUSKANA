@@ -58,37 +58,81 @@
     <!-- ============ NAVBAR END =============== -->
 
     <!-- ============== SIDEBAR START ================= -->
-    <div class="sidebar-container bg-dark d-flex position-relative">
-        <ul class="nav flex-column d-inline p-2 postion-absolute">
-            <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Explore</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Massage</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Bookmarks</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">List</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Profile</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">More</a>
-            </li>
+    <div class="general-container d-flex position-relative justify-content-between p-5 m-5">
+        <div class="sidebar-container d-flex position-relative bg-warning">
+            <ul class="nav flex-column d-inline p-2 postion-absolute">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Explore</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Massage</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Bookmarks</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">List</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Profile</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">More</a>
+                </li>
 
-        </ul>
+            </ul>
+        </div>
+        <!-- =============== SIDEBAR END ================ -->
+        <div class="main-container bg-info postion-absolute">MAIN INFO
+
+        </div>
+
+        <div class="right-container bg-danger">
+            RIGHT INFO
+        </div>
     </div>
-    <!-- =============== SIDEBAR END ================ -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     <!-- ============ MODAL BTN ===================== -->
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-        Tweet
+    <button type="button" class="btn btn-primary display-absolute row col-2 rounded-pill p-2 m-3" data-bs-toggle="modal"
+        data-bs-target="#exampleModal" id="tweet">Tweet
     </button>
 
     <!-- ======================= MODAL START ================================= -->
@@ -105,17 +149,19 @@
                 </div>
                 <div class="modal-body">
                     <img width="45" src="./img/userlogo.png" alt="">
-                    <input type="text" class="border-0" id="tweet-inp" placeholder="What's happening?">
+                    <form class="add-form">
+                        <input type="text" class="border-0" id="tweet-inp" placeholder="What's happening?">
+                    </form>
                 </div>
                 <div class="modal-footer">
-                    <a href="">
+                    <a class="" href="">
                         <img width="20" src="./img/media.png" alt="">
                         <img width="20" src="./img/gif.png" alt="">
                         <img width="20" src="./img/pool.png" alt="">
                         <img width="20" src="./img/emoji.png" alt="">
                         <img width="20" src="./img/shedule.png" alt="">
                         <img width="20" src="./img/mark.png" alt="">
-                        <button class="btn-primary rounded-3">Tweet</button>
+                        <button class="btn-primary rounded-pill" id="add-tweet">Tweet</button>
                     </a>
                 </div>
             </div>
