@@ -17,6 +17,7 @@ $(document).ready(() => {
           { id: 3, comment: "Nice!" },
         ],
       });
+      console.log("Successfully created");
     } catch (error) {
       console.log(error);
     }
@@ -26,18 +27,18 @@ $(document).ready(() => {
   async function renderTweet() {
     $(".tweets").html("");
     const response = await axios(API);
-    response.data.forEach(() => {
+    response.data.forEach((element) => {
       $(".tweets").append(`
-        <div class="card">
-  <div class="card-header">
-    Tweet #${element.id}
+          <div class="card">
+    <div class="card-header">
+      Tweet #${element.id}
+    </div>
+    <div class="card-body">
+      <p class="card-text">${element.title}</p>
+      <a href="#" class="like-btn btn btn-outline-primary">Like ${element.likes}</a>
+    </div>
   </div>
-  <div class="card-body">
-    <p class="card-text">${element.title}</p>
-    <a href="#" class="like-btn btn btn-outline-primary">Like ${element.likes}</a>
-  </div>
-</div>
-        `);
+          `);
     });
   }
   renderTweet();
