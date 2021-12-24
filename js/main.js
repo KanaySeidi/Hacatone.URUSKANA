@@ -5,6 +5,7 @@ const tBtn = document.getElementById("tweet-btn");
 
 tBtn.addEventListener("click", () => {
   addPost();
+  inp.value = "";
 });
 
 async function addPost() {
